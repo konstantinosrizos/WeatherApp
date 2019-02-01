@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Current Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CurrentWeatherViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="VD2-0g-tXb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2T6-tt-s1g">
+                                <rect key="frame" x="191" y="20" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="nfh-EM-WiS"/>
+                                    <constraint firstAttribute="height" constant="32" id="pPp-Ww-n8V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSB-lt-90B">
+                                <rect key="frame" x="20" y="160" width="374" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Athens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-kc-5gd">
+                                <rect key="frame" x="16" y="82" width="382" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Roe-YR-ZMf">
+                                <rect key="frame" x="20" y="320" width="374" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eCL-En-aPK">
+                                <rect key="frame" x="191" y="115" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="DU9-El-vGU"/>
+                                    <constraint firstAttribute="width" constant="32" id="zqG-Hw-27w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VD2-0g-tXb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0qY-SS-Lho"/>
+                            <constraint firstItem="VD2-0g-tXb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1l1-s5-b8j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Roe-YR-ZMf" secondAttribute="trailing" constant="20" id="1wK-Ta-BQo"/>
+                            <constraint firstItem="2T6-tt-s1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4R9-D9-l2S"/>
+                            <constraint firstItem="Roe-YR-ZMf" firstAttribute="top" secondItem="YSB-lt-90B" secondAttribute="bottom" constant="64" id="B26-wF-Rc1"/>
+                            <constraint firstItem="VD2-0g-tXb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bm1-RP-lwp"/>
+                            <constraint firstItem="VD2-0g-tXb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EaC-Yv-MuX"/>
+                            <constraint firstItem="zaY-kc-5gd" firstAttribute="top" secondItem="2T6-tt-s1g" secondAttribute="bottom" constant="30" id="JCf-wF-a4z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zaY-kc-5gd" secondAttribute="trailing" constant="16" id="UEh-0D-AB7"/>
+                            <constraint firstItem="2T6-tt-s1g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPl-9s-2NO"/>
+                            <constraint firstItem="YSB-lt-90B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yp5-Gc-4YW"/>
+                            <constraint firstItem="zaY-kc-5gd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c2G-6D-pxc"/>
+                            <constraint firstItem="Roe-YR-ZMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jph-4Q-tR6"/>
+                            <constraint firstItem="eCL-En-aPK" firstAttribute="top" secondItem="zaY-kc-5gd" secondAttribute="bottom" constant="12" id="oyr-aI-Jjf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YSB-lt-90B" secondAttribute="trailing" constant="20" id="pTj-1W-3Af"/>
+                            <constraint firstItem="eCL-En-aPK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t0l-1Q-iGk"/>
+                            <constraint firstItem="YSB-lt-90B" firstAttribute="top" secondItem="eCL-En-aPK" secondAttribute="bottom" constant="13" id="u3I-YR-e6p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="VD2-0g-tXb" id="T6g-Bq-uvU"/>
+                        <outlet property="cityTextLabel" destination="zaY-kc-5gd" id="rLj-wk-BVP"/>
+                        <outlet property="summary" destination="Roe-YR-ZMf" id="uqG-sK-SUZ"/>
+                        <outlet property="temperatureLabel" destination="YSB-lt-90B" id="0c4-JY-rTa"/>
+                        <outlet property="weatherIcon" destination="eCL-En-aPK" id="olX-Ug-rkM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1600" height="1067"/>
+        <image name="logo" width="210" height="237"/>
+    </resources>
+</document>
